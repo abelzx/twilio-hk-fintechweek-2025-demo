@@ -62,7 +62,7 @@ export const selectScreenRequestSessions = createSelector(
 
 export const selectSessionLanguage = createSelector(
   [selectSessionById],
-  (session) => session?.screenControl?.language ?? "en-AU"
+  (session) => session?.screenControl?.language ?? "en-US"
 );
 
 export const selectRecallItems = createSelector(

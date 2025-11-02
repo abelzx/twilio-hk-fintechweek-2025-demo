@@ -91,8 +91,8 @@ const tools: Tool[] = [
         language: {
           type: "string",
           description:
-            "The BCP-47 language code to switch to, 'en-AU', 'zh-CN'. This value must match one of the supported codes defined in the system prompt. ",
-          enum: ["en-AU", "zh-CN"],
+            "The BCP-47 language code to switch to, 'en-US' for English, 'zh-CN' for Chinese or Mandarin, 'zh-HK' for Cantonese. This value must match one of the supported codes defined in the system prompt. ",
+          enum: ["en-US", "zh-CN", "zh-HK"],
         },
       },
       required: ["language"],

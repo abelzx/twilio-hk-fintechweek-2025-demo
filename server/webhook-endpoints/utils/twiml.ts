@@ -45,17 +45,24 @@ export function makeConversationRelayTwiML({
 
   conversationRelay.language({
     ttsProvider: "elevenlabs",
+    voice: "Z3R5wn05IrDiVCyEkUrK",
+    transcriptionProvider: "deepgram",
+    code: "en-US",
+  });
+
+  conversationRelay.language({
+    ttsProvider: "elevenlabs",
     voice: "tOuLUAIdXShmWH7PEUrU",
     transcriptionProvider: "deepgram",
     code: "zh-CN",
   });
 
-  // conversationRelay.language({
-  //   ttsProvider: "minimax",
-  //   voice: "Cantonese_ProfessionalHost（F)",
-  //   transcriptionProvider: "deepgram",
-  //   code: "zh-HK",
-  // });
+  conversationRelay.language({
+    ttsProvider: "minimax",
+    voice: "Cantonese_ProfessionalHost（F)",
+    transcriptionProvider: "deepgram",
+    code: "zh-HK",
+  });
 
   Object.entries(parameters).forEach(([name, value]) =>
     conversationRelay.parameter({ name, value: JSON.stringify(value) })

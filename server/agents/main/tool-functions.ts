@@ -82,7 +82,7 @@ async function request_screen_control_permission(
 }
 
 interface SwitchLanguageArgs {
-  language: "en-AU" | "zh-CN";
+  language: "en-US" | "zh-CN" | "zh-HK";
 }
 
 async function switch_language(
@@ -94,7 +94,7 @@ async function switch_language(
   deps.store.context.update((ctx) => ({
     screenControl: {
       ...ctx.screenControl,
-      language: args.language ?? "en-AU",
+      language: args.language ?? "en-US",
     },
   }));
 

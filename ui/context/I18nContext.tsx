@@ -16,7 +16,7 @@ const I18nContext = createContext<I18nContextType | undefined>(undefined);
 export const I18nProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
-  const [lang, setLang] = useState("en-AU");
+  const [lang, setLang] = useState("en-US");
   const [dict, setDict] = useState<Translations>({});
 
   useEffect(() => {

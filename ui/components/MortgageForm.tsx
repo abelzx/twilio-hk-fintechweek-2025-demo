@@ -47,7 +47,7 @@ export function MortgageForm({ formName }: { formName: FormNameType }) {
     setLang(
       session?.call?.status !== "completed" && session?.screenControl?.language
         ? session.screenControl.language
-        : "en-AU"
+        : "en-US"
     );
   }, [session?.call?.status, session?.screenControl?.language, setLang]);
 

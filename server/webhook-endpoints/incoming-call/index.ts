@@ -43,7 +43,7 @@ const screenCall: RequestHandler = async (req, res) => {
 
     const twiml = `\
 <Response>
-  <Say language='en-GB'>Terribly sorry. Your call is being screened. Your phone number is not on the list.</Say>
+  <Say language='en-US'>Terribly sorry. Your call is being screened. Your phone number is not on the list.</Say>
 </Response>
     `;
 
